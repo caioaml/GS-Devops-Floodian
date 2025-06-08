@@ -13,7 +13,7 @@ curl -X PUT http://localhost:8080/Floodian/usuarios/1 \
 -H "Content-Type: application/json" \
 -d '{
   "nome": "João Atualizado",
-  "email": "joao@teste.com",
+  "email": "joaoatualizado@teste.com",
   "telefone": "11988887777",
   "tipoUsuario": "USER",
   "senha": "novaSenha"
