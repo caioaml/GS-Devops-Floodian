@@ -2,6 +2,38 @@
 
 LINK VIDEO DEMONSTRATIVO YOUTUBE: https://youtu.be/ZeBhg7iYh2I
 
+Comandos essenciais utilizados para criar, buildar e rodar a API Java com Docker:
+
+1. Atualizar e instalar dependências
+sudo apt update
+sudo apt install git curl openjdk-17-jdk maven docker.io -y
+
+2. Clonar o projeto do GitHub
+mkdir -p ~/projetos
+cd ~/projetos
+git clone https://github.com/CmarxS/MySQL-Java-Floodian.git floodian
+cd floodian
+
+3. Criar rede Docker para os containers se comunicarem
+docker network create floodian-net
+
+4. Dockerfile
+(Dockerfile fara tudo que resta agora)
+
+5. Buildar a imagem da API Java
+docker build -t floodian-api .
+
+ 6. Rodar o container da API
+docker run -d \
+  --name floodian-api \
+  --network floodian-net \
+  -p 8080:8080 \
+  floodian-api
+
+
+
+
+
 -----------CONTAINER DO BANCO DE DADOS
 
 docker run -d \
