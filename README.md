@@ -1,5 +1,7 @@
 # GS-Devops-Floodian
 
+LINK VIDEO DEMONSTRATIVO YOUTUBE: https://youtu.be/ZeBhg7iYh2I
+
 -----------CONTAINER DO BANCO DE DADOS
 
 docker run -d \
@@ -56,3 +58,23 @@ curl -X PUT http://localhost:8080/Floodian/usuarios/1 \
 
 ❌ Excluir (DELETE)
 curl -X DELETE http://localhost:8080/Floodian/usuarios/1
+
+
+PRINTS DE COMPROVAÇÃO:
+
+Docker ps (Os dois containers rodando)
+![image](https://github.com/user-attachments/assets/4564dec8-9da2-474d-9192-4e73816336f1)
+
+Logs Container do Banco MySQL
+![image](https://github.com/user-attachments/assets/732ac8be-16f0-4153-9bf4-66d3280f7795)
+
+Logs Container da API Java
+![image](https://github.com/user-attachments/assets/8a7abf19-25b3-4fa6-a041-28ba7712bfc9)
+![image](https://github.com/user-attachments/assets/51f0a1d5-eacd-4cb3-bfa5-88a05b562dd6)
+
+
+
+
+
+
+
