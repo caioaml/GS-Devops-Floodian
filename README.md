@@ -1,6 +1,7 @@
 # GS-Devops-Floodian
 
 -----------CONTAINER DO BANCO DE DADOS
+
 docker run -d \
   --name db-gs-floodian \
   -e MYSQL_ROOT_PASSWORD=root123 \
